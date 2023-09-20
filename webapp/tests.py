@@ -2,7 +2,6 @@ from django.test import TestCase
 from rest_framework.test import APIClient
 from rest_framework import status
 from .models import myModel  # Import your model
-# Test runner for dev branch
 class MyModelViewSetTestCase(TestCase):
     def setUp(self):
         self.client = APIClient()
