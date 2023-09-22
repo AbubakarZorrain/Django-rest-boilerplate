@@ -5,7 +5,6 @@ from .views import myModelList
 router = routers.DefaultRouter()
 router.register(r'model', myModelList, basename='model')
 # Wire up our API using automatic URL routing.
-# Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include(router.urls)),
 ]
